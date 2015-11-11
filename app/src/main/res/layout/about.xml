@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/textView"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="0.12"
+        android:text="Practica de Analisis Numerico\n \n Desarrollado por: \n Daniel Arango Pelaez \n Juan Fernando Zuluaga"
+        android:textIsSelectable="false"
+        android:editable="false" />
+
+</LinearLayout>

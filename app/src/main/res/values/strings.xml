@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Metodos Numericos</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_busquedasincrementales">Busquedasincrementales</string>
+    <string name="title_activity_busquedas_incrementales">BusquedasIncrementales</string>
+</resources>
