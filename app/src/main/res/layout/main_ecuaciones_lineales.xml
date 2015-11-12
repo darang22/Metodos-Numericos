@@ -41,24 +41,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Biseccion"
+        android:onClick="createBiseccion"
         android:id="@+id/button3" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Newton"
+        android:onClick="createNewton"
         android:id="@+id/button4" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Regla falsa"
+        android:onClick="createReglaFalsa"
         android:id="@+id/button5" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Punto Fijo"
+        android:onClick="createPuntoFijo"
         android:id="@+id/button6" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secante"
+        android:onClick="createSecante"
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raices Multiples"
+        android:onClick="createRaicesMultiples"
+        android:id="@+id/button7" />
+
+
 
 </LinearLayout>

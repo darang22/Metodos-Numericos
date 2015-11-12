@@ -38,6 +38,56 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="daniel.juanfer.metodosnumericos.MainActivity" />
         </activity>
+        <activity
+            android:name=".Biseccion"
+            android:label="@string/title_activity_biseccion"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Newton"
+            android:label="@string/title_activity_newton"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Reglafalsa"
+            android:label="@string/title_activity_reglafalsa"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PuntoFijo"
+            android:label="@string/title_activity_punto_fijo"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Secante"
+            android:label="@string/title_activity_secante"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RaicesMultiples"
+            android:label="@string/title_activity_raices_multiples"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

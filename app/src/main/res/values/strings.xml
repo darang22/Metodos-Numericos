@@ -4,4 +4,10 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_busquedasincrementales">Busquedasincrementales</string>
     <string name="title_activity_busquedas_incrementales">BusquedasIncrementales</string>
+    <string name="title_activity_biseccion">Biseccion</string>
+    <string name="title_activity_newton">Newton</string>
+    <string name="title_activity_reglafalsa">Reglafalsa</string>
+    <string name="title_activity_punto_fijo">PuntoFijo</string>
+    <string name="title_activity_secante">Secante</string>
+    <string name="title_activity_raices_multiples">RaicesMultiples</string>
 </resources>

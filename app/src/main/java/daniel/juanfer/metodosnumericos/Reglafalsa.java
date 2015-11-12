@@ -17,11 +17,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.EditText;
 import android.widget.TextView;
-import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class Reglafalsa extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    public final static String EXTRA_MESSAGE = "daniel.juanger.metodosnumericos.MESSAGE";
+
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_reglafalsa);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -57,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_reglafalsa, menu);
         return true;
     }
 
@@ -81,67 +80,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void createBusquedas(View view){
-        Intent intent = new Intent(this, BusquedasIncrementales.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-
-    public void createGrafica(View view){
-        Intent intent = new Intent(this, Graficador.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createBiseccion(View view){
-        Intent intent = new Intent(this, Biseccion.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createNewton(View view){
-        Intent intent = new Intent(this, Newton.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-
-    }
-    public void createReglaFalsa(View view){
-        Intent intent = new Intent(this, Reglafalsa.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-
-    }
-    public void createPuntoFijo(View view){
-        Intent intent = new Intent(this, PuntoFijo.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createSecante(View view){
-        Intent intent = new Intent(this, Secante.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createRaicesMUltiples(View view){
-        Intent intent = new Intent(this, RaicesMultiples.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-
 
 
     /**
@@ -171,11 +109,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "About";
+                    return "Parametros";
                 case 1:
-                    return "Lineales";
+                    return "Ayuda";
                 case 2:
-                    return "SECTION 3";
+                    return "Tablas";
             }
             return null;
         }
@@ -209,20 +147,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-
-            if(getArguments().getInt(ARG_SECTION_NUMBER)==1){
-                View rootView = inflater.inflate(R.layout.about,container, false);
+            if(getArguments().getInt(ARG_SECTION_NUMBER)==1) {
+                View rootView = inflater.inflate(R.layout.fragment_reglafalsa_parametros, container, false);
                 return rootView;
-
             }
-            if(getArguments().getInt(ARG_SECTION_NUMBER)==2){
-                View rootView = inflater.inflate(R.layout.main_ecuaciones_lineales,container, false);
+            if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
+                View rootView = inflater.inflate(R.layout.fragment_reglafalsa_ayuda, container, false);
                 return rootView;
-
-            }else{
-                View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-                textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            }else {
+                View rootView = inflater.inflate(R.layout.fragment_reglafalsa_tablas, container, false);
                 return rootView;
             }
         }
