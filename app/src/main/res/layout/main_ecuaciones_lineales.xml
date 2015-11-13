@@ -4,81 +4,93 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Metodos para ecuaciones lineales"
-        android:id="@+id/textView2"
-        android:layout_weight="0.17"
-        android:textSize="25dp"
-        android:textAlignment="center"
-        android:textColor="#a95252" />
+        android:id="@+id/scrollView"
+        android:nestedScrollingEnabled="true">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:id="@+id/txtEcuacion"
-        android:textAlignment="center"
-        android:hint="Ecuacion a utilizar" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Graficar"
-        android:onClick="createGrafica"
-        android:id="@+id/butGraficar" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Metodos para ecuaciones lineales"
+                android:id="@+id/textView2"
+                android:layout_weight="0.17"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="#a95252" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Busquedas incrementales"
-        android:onClick="createBusquedas"
-        android:id="@+id/butBusquedas" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/txtEcuacion"
+                android:textAlignment="center"
+                android:hint="Ecuacion a utilizar" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Biseccion"
-        android:onClick="createBiseccion"
-        android:id="@+id/button3" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graficar"
+                android:onClick="createGrafica"
+                android:id="@+id/butGraficar" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Newton"
-        android:onClick="createNewton"
-        android:id="@+id/button4" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Busquedas incrementales"
+                android:onClick="createBusquedas"
+                android:id="@+id/butBusquedas" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Regla falsa"
-        android:onClick="createReglaFalsa"
-        android:id="@+id/button5" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biseccion"
+                android:onClick="createBiseccion"
+                android:id="@+id/button3" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Punto Fijo"
-        android:onClick="createPuntoFijo"
-        android:id="@+id/button6" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Newton"
+                android:onClick="createNewton"
+                android:id="@+id/button4" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Secante"
-        android:onClick="createSecante"
-        android:id="@+id/button2" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regla falsa"
+                android:onClick="createReglaFalsa"
+                android:id="@+id/button5" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Raices Multiples"
-        android:onClick="createRaicesMultiples"
-        android:id="@+id/button7" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punto Fijo"
+                android:onClick="createPuntoFijo"
+                android:id="@+id/button6" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secante"
+                android:onClick="createSecante"
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raices Multiples"
+                android:onClick="createRaicesMultiples"
+                android:id="@+id/button7" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

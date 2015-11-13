@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
-    public void createRaicesMUltiples(View view){
+    public void createRaicesMultiples(View view){
         Intent intent = new Intent(this, RaicesMultiples.class);
         EditText editText = (EditText) findViewById(R.id.txtEcuacion);
         String ecuacion = editText.getText().toString();
