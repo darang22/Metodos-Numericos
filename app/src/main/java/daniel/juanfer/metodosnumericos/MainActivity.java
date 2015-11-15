@@ -120,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void createPuntoFijo(View view){
-        Intent intent = new Intent(this, PuntoFijo.class);
+    public void createPuntofijo(View view){
+        Intent intent = new Intent(this, Puntofijo.class);
         EditText editText = (EditText) findViewById(R.id.txtEcuacion);
         String ecuacion = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE,ecuacion);
@@ -134,13 +134,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
-    public void createRaicesMultiples(View view){
-        Intent intent = new Intent(this, RaicesMultiples.class);
+    public void createRaicesmultiples(View view){
+        Intent intent = new Intent(this, Raicesmultiples.class);
         EditText editText = (EditText) findViewById(R.id.txtEcuacion);
         String ecuacion = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
+
 
 
 

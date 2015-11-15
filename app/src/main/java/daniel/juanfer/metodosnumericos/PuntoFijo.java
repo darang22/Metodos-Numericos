@@ -1,8 +1,8 @@
 package daniel.juanfer.metodosnumericos;
 
+import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class PuntoFijo extends AppCompatActivity {
+public class Puntofijo extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class PuntoFijo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_punto_fijo);
+        setContentView(R.layout.activity_puntofijo);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -52,7 +52,6 @@ public class PuntoFijo extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
@@ -63,7 +62,7 @@ public class PuntoFijo extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_punto_fijo, menu);
+        getMenuInflater().inflate(R.menu.menu_puntofijo, menu);
         return true;
     }
 

@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Punto Fijo"
-                android:onClick="createPuntoFijo"
+                android:onClick="createPuntofijo"
                 android:id="@+id/button6" />
 
             <Button
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Raices Multiples"
-                android:onClick="createRaicesMultiples"
+                android:onClick="createRaicesmultiples"
                 android:id="@+id/button7" />
         </LinearLayout>
     </ScrollView>
