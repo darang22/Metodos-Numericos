@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metodos para ecuaciones matriciales"
+        android:id="@+id/textView3"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#a95252" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:id="@+id/editText3"
+        android:layout_gravity="center_horizontal"
+        android:text="Entre Matriz"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminacion Gaussiana Sin Pivoteo"
+        android:id="@+id/button8"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminacion Gaussiana con pivoteo parcial"
+        android:id="@+id/button9"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminacion Gaussiana con pivoteo total"
+        android:id="@+id/button10"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorizacion LU con eliminacion Gaussiana sin pivoteo"
+        android:id="@+id/button11"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorizacion LU con eliminacion Gaussiana con pivoteo parcial"
+        android:id="@+id/button12"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorizacion LU con eliminacion Gaussiana con pivoteo total"
+        android:id="@+id/button13"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cholesky"
+        android:id="@+id/button14"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crout"
+        android:id="@+id/button15"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DooLittle"
+        android:id="@+id/button16"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gauss Seidel"
+        android:id="@+id/button17"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jacobi"
+        android:id="@+id/button18"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

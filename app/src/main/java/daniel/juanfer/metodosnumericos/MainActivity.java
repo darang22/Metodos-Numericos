@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return "Lineales";
                 case 2:
-                    return "SECTION 3";
+                    return "Matrices";
             }
             return null;
         }
@@ -221,9 +221,7 @@ public class MainActivity extends AppCompatActivity {
                 return rootView;
 
             }else{
-                View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-                TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-                textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+                View rootView = inflater.inflate(R.layout.main_ecuaciones_matrices, container, false);
                 return rootView;
             }
         }
