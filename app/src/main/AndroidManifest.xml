@@ -97,6 +97,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="daniel.juanfer.metodosnumericos.MainActivity" />
         </activity>
+        <activity
+            android:name=".EliminacionGaussianaSinPivoteo"
+            android:label="@string/title_activity_eliminacion_gaussiana_sin_pivoteo"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

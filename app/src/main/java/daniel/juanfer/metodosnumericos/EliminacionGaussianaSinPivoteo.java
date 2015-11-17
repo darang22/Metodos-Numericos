@@ -17,11 +17,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.EditText;
 import android.widget.TextView;
-import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class EliminacionGaussianaSinPivoteo extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-    public final static String EXTRA_MESSAGE = "daniel.juanger.metodosnumericos.MESSAGE";
+
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -41,10 +39,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_eliminacion_gaussiana_sin_pivoteo);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -56,14 +55,13 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_eliminacion_gaussiana_sin_pivoteo, menu);
         return true;
     }
 
@@ -81,75 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void createBusquedas(View view){
-        Intent intent = new Intent(this, BusquedasIncrementales.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-
-    public void createGrafica(View view){
-        Intent intent = new Intent(this, Graficador.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createBiseccion(View view){
-        Intent intent = new Intent(this, Biseccion.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createNewton(View view){
-        Intent intent = new Intent(this, Newton.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-
-    }
-    public void createReglaFalsa(View view){
-        Intent intent = new Intent(this, Reglafalsa.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-
-    }
-    public void createPuntofijo(View view){
-        Intent intent = new Intent(this, Puntofijo.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createSecante(View view){
-        Intent intent = new Intent(this, Secante.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createRaicesmultiples(View view){
-        Intent intent = new Intent(this, Raicesmultiples.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-    public void createEleminaciongaussianasinpivoteo(View view){
-        Intent intent = new Intent(this, EliminacionGaussianaSinPivoteo.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
-        startActivity(intent);
-    }
-
-
 
 
     /**
@@ -179,11 +108,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "About";
+                    return "Resultados";
                 case 1:
-                    return "Lineales";
+                    return "Ayuda";
                 case 2:
-                    return "Matrices";
+                    return "SECTION 3";
             }
             return null;
         }
@@ -217,18 +146,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-
-            if(getArguments().getInt(ARG_SECTION_NUMBER)==1){
-                View rootView = inflater.inflate(R.layout.about,container, false);
+            if(getArguments().getInt(ARG_SECTION_NUMBER)==1) {
+                View rootView = inflater.inflate(R.layout.fragment_eliminacion_gaussiana_sin_pivoteo_resultados, container, false);
                 return rootView;
-
             }
-            if(getArguments().getInt(ARG_SECTION_NUMBER)==2){
-                View rootView = inflater.inflate(R.layout.main_ecuaciones_lineales,container, false);
+            if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
+                View rootView = inflater.inflate(R.layout.fragment_eliminacion_gaussiana_sin_pivoteo_ayuda, container, false);
                 return rootView;
-
-            }else{
-                View rootView = inflater.inflate(R.layout.main_ecuaciones_matrices, container, false);
+            }else {
+                View rootView = inflater.inflate(R.layout.about, container, false);
                 return rootView;
             }
         }

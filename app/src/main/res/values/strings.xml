@@ -12,4 +12,6 @@
     <string name="title_activity_raices_multiples">RaicesMultiples</string>
     <string name="title_activity_puntofijo">Puntofijo</string>
     <string name="title_activity_raicesmultiples">Raicesmultiples</string>
+    <string name="title_activity_eliminacion_gaussiana_sin_pivoteo">EliminacionGaussianaSinPivoteo
+    </string>
 </resources>
