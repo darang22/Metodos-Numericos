@@ -220,16 +220,23 @@ public class MainActivity extends AppCompatActivity {
     }
     public void createPolinomiolagrange(View view){
         Intent intent = new Intent(this, PolinomioLagrange.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+       // EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+       // String ecuacion = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
     public void createPolinomioneville(View view){
         Intent intent = new Intent(this, PolinomioNeville.class);
-        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
-        String ecuacion = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        //EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        //String ecuacion = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createPolinomionewton(View view){
+        Intent intent = new Intent(this, PolinomioNewton.class);
+        //EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        //String ecuacion = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
 

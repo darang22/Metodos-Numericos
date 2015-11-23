@@ -223,6 +223,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="daniel.juanfer.metodosnumericos.MainActivity" />
         </activity>
+        <activity
+            android:name=".PolinomioNewton"
+            android:label="@string/title_activity_polinomio_newton"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
