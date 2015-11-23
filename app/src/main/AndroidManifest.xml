@@ -196,6 +196,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="daniel.juanfer.metodosnumericos.MainActivity" />
         </activity>
+        <activity
+            android:name=".Jacobi"
+            android:label="@string/title_activity_jacobi"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PolinomioLagrange"
+            android:label="@string/title_activity_polinomio_lagrange"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PolinomioNeville"
+            android:label="@string/title_activity_polinomio_neville"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
