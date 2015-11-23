@@ -148,6 +148,69 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
+    public void createEliminacionGaussianaconpivoteoparcial(View view){
+        Intent intent = new Intent(this, EliminacionGaussianaPivoteoParcial.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createEliminacionGaussianaconpivoteototal(View view){
+        Intent intent = new Intent(this, EliminacionGaussianaConPivoteoTotal.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createFactorizacionluconeliminaciongaussianasinpivoteo(View view){
+        Intent intent = new Intent(this, FactorizacionLuConEliminacionGSinPivoteo.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createFactorizacionluconeliminaciongaussianaconpivoteoparcial(View view){
+        Intent intent = new Intent(this, FactorizacionLuConEliminacionGConPivoteoParcial.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createFactorizacionluconeliminaciongaussianaconpivoteototal(View view){
+        Intent intent = new Intent(this, FactorizacionLuConEliminacionGConPivoteoTotal.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createCholesky(View view){
+        Intent intent = new Intent(this, Cholesky.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createCrout(View view){
+        Intent intent = new Intent(this, Crout.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createDoolittle(View view){
+        Intent intent = new Intent(this, Doolittle.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createGaussseidel(View view){
+        Intent intent = new Intent(this, GaussSeidel.class);
+        EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        String ecuacion = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
 
 
 
@@ -172,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -184,6 +247,8 @@ public class MainActivity extends AppCompatActivity {
                     return "Lineales";
                 case 2:
                     return "Matrices";
+                case 3:
+                    return "Interp";
             }
             return null;
         }
@@ -223,12 +288,19 @@ public class MainActivity extends AppCompatActivity {
                 return rootView;
 
             }
-            if(getArguments().getInt(ARG_SECTION_NUMBER)==2){
-                View rootView = inflater.inflate(R.layout.main_ecuaciones_lineales,container, false);
+            if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
+                View rootView = inflater.inflate(R.layout.main_ecuaciones_lineales, container, false);
                 return rootView;
 
-            }else{
+            }if(getArguments().getInt(ARG_SECTION_NUMBER)==3) {
                 View rootView = inflater.inflate(R.layout.main_ecuaciones_matrices, container, false);
+                return rootView;
+
+            }if(getArguments().getInt(ARG_SECTION_NUMBER)==4){
+                View rootView = inflater.inflate(R.layout.main_interpolacion, container, false);
+                return rootView;
+            }else{
+                View rootView = inflater.inflate(R.layout.about, container, false);
                 return rootView;
             }
         }
