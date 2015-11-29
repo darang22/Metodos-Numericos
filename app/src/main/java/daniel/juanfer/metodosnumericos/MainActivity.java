@@ -239,7 +239,20 @@ public class MainActivity extends AppCompatActivity {
         //intent.putExtra(EXTRA_MESSAGE,ecuacion);
         startActivity(intent);
     }
-
+    public void createSplinecuadratico(View view){
+        Intent intent = new Intent(this, SplineCuadratico.class);
+        //EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        //String ecuacion = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
+    public void createSplinecubico(View view){
+        Intent intent = new Intent(this, SplineCubico.class);
+        //EditText editText = (EditText) findViewById(R.id.txtEcuacion);
+        //String ecuacion = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE,ecuacion);
+        startActivity(intent);
+    }
 
 
 

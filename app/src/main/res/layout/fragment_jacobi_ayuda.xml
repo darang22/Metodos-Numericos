@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText17"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="El método de Jacobi consiste en realizar una secuencia de transformaciones ortogonales, cada transformación se denomina “rotación de Jacobi”; y corresponde a una rotación cuyo objetivo es eliminar a un elemento de la matriz. Se va rotando sucesivamente la matriz hasta que el error es pequeño para ser considerada una matriz diagonal." />
 </LinearLayout>

@@ -41,4 +41,6 @@
     <string name="title_activity_polinomio_lagrange">PolinomioLagrange</string>
     <string name="title_activity_polinomio_neville">PolinomioNeville</string>
     <string name="title_activity_polinomio_newton">PolinomioNewton</string>
+    <string name="title_activity_spline_cuadratico">SplineCuadratico</string>
+    <string name="title_activity_spline_cubico">SplineCubico</string>
 </resources>

@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText13"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Este método se descompone en dos procesos fundamentales. En el primero utilizamos transformaciones sobre el sistema de ecuaciones utilizando operaciones elimínatelas hasta obtener un sistema de ecuaciones equivalentes cuya matriz de coeficientes es una matriz triangular superior. En el segundo realizamos un simple despeje en el sistema obtenido." />
 </LinearLayout>

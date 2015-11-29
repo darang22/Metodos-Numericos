@@ -6,8 +6,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText11"
+        android:id="@+id/editText21"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
-        android:text="Este método consiste es una variante de punto fijo y es una buena alternativa al método de Newton. A  diferencia del método de Newton, no se requieren derivadas y requiere dos valores iniciales." />
+        android:text="Está formada por varios polinomios, cada uno definido sobre un subintervalo, que se unen entre sí obedeciendo a ciertas condiciones de continuidad." />
 </LinearLayout>

@@ -3,4 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText20"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="El polinomio de interpolación consiste en determinar el único polinomio de n-ésimo orden que se ajusta a los n+1 puntos dados. Este polinomio proporciona una fórmula para calcular los valores intermedios  Para ajustar un polinomio de n-ésimo orden a n+1 datos el siguiente es el valor que tomaría el polinomio. fn(x) = b0 + b1(x-x0) + ... + bn(x-x0)(x-x1)...(x-xn-1)" />
+
 </LinearLayout>

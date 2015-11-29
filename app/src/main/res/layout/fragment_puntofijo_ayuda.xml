@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText10"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Este método consiste en obtener una ecuación g(x) de una ecuación f(x), en las cuales el objetivo es  llegar a un g(x) = 0. Es como obtener un f(x) = 0, En donde los x cumplan que g(x) = x es donde hay raíces en la ecuación f(x)." />
 </LinearLayout>

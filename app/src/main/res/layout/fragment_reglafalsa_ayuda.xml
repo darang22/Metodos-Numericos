@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:layout_gravity="center_horizontal"
+        android:text="Este método consiste en dado un intervalo que contenga una raíz, hallar la recta que une a los puntos (Xi,F(xi)) y (Xa, F(xa)). hallar la intersección con el eje x y quedarse con el intervalo que contenga la raíz."
+        android:textAlignment="center" />
 </LinearLayout>

@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class BusquedasIncrementales extends AppCompatActivity {
+public class SplineCuadratico extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class BusquedasIncrementales extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_busquedas_incrementales);
+        setContentView(R.layout.activity_spline_cuadratico);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,7 +61,7 @@ public class BusquedasIncrementales extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_busquedas_incrementales, menu);
+        getMenuInflater().inflate(R.menu.menu_spline_cuadratico, menu);
         return true;
     }
 
@@ -108,11 +108,11 @@ public class BusquedasIncrementales extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Parametros";
+                    return "Resultado";
                 case 1:
                     return "Ayuda";
                 case 2:
-                    return "Tabla";
+                    return "SECTION 3";
             }
             return null;
         }
@@ -147,14 +147,14 @@ public class BusquedasIncrementales extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             if(getArguments().getInt(ARG_SECTION_NUMBER)==1) {
-                View rootView = inflater.inflate(R.layout.fragment_busquedas_incrementales_parametros, container, false);
+                View rootView = inflater.inflate(R.layout.fragment_spline_cuadratico_resultados, container, false);
                 return rootView;
             }
             if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
-                View rootView = inflater.inflate(R.layout.fragment_busquedas_incrementales_ayuda, container, false);
+                View rootView = inflater.inflate(R.layout.fragment_spline_cuadratico_ayuda, container, false);
                 return rootView;
             }else {
-                View rootView = inflater.inflate(R.layout.fragment_busquedas_incrementales_tablas, container, false);
+                View rootView = inflater.inflate(R.layout.about, container, false);
                 return rootView;
             }
         }

@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText12"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Este método también es llamado Newton Modificado es una variante de punto fijo, dado que los métodos de Newton y de la secante, ante la presencia de raíces múltiples convergen linealmente y pueden fallar. Ralston y Rabinowits propusieron cambios para estos métodos llegando así a la ecuación de este método. " />
 </LinearLayout>

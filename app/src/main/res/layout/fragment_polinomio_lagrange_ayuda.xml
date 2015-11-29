@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText19"
+        android:layout_gravity="center_horizontal"
+        android:text="Este método consiste en construir el polinomio interpolador de grado n que pasa por n + 1 puntos (xi,yi). Donde las funciones Li(x) cumplen Li(xk) = 0 si i =/= k y Li(xi) = 1. Esta propiedad garantiza Pn(xk) = yk." />
 
 </LinearLayout>

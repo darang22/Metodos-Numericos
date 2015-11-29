@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Este método consiste es una variante de punto fijo, comparte la forma de g(x) = x. La ecuación g(x) siempre será de la siguiente forma: g(x) = x – f(x)/f’(x). Este método es muy rápido pero puede traer complicaciones ya que utiliza una derivada." />
 </LinearLayout>

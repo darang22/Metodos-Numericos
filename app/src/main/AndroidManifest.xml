@@ -232,6 +232,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="daniel.juanfer.metodosnumericos.MainActivity" />
         </activity>
+        <activity
+            android:name=".SplineCuadratico"
+            android:label="@string/title_activity_spline_cuadratico"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SplineCubico"
+            android:label="@string/title_activity_spline_cubico"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="daniel.juanfer.metodosnumericos.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

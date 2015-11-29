@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText18"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Hace parte de los métodos iterativos. Dado que en la realización de los cálculos de una etapa se determina una aproximación que consta de varios valores, es posible variar la forma como se sustituyen las variables que permitan calcularlos. El criterio supone que una vez que se conoce el nuevo valor de una de las variables, lo utilizamos para determinar el valor de las que faltan." />
 </LinearLayout>

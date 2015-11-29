@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText14"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="Cualquier matriz cuadrada A con pivotes no nulos puede ser escrita como el producto de una matriz triangular inferior L y una matriz triangular superior U; esto recibe el nombre de factorización LU. Sin embargo, si A es simétrica y definida positiva, se pueden escoger los factores tales que U es la transpuesta de L, y esto se llama la descomposición o factorización de Cholesky. Tanto la descomposición LU como la descomposición de Cholesky son usadas para resolver sistemas de ecuaciones lineales. Cuando es aplicable, la descomposición de Cholesky es dos veces más eficiente que la descomposición LU. " />
 </LinearLayout>

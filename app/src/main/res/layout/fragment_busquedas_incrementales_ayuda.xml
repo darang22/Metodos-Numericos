@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_gravity="center_horizontal"
+        android:text="Su objetivo es encontrar un intervalo que contenga al menos una raíz. Se garantiza que haya una raíz si  la función es continua en el intervalo [a,b] que se utiliza y además f(a) * f(b) &lt; 0. Un problema con este   método es que es posible que se pase por una o más raíces en un intervalo y aun así diga que no haya   raíz."
+        android:textAlignment="center" />
+</LinearLayout>

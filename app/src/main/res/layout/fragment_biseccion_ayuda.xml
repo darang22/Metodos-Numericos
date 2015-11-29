@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:layout_gravity="center_horizontal"
+        android:text="El objetivo de este método es converger a una raíz en un intervalo [xi,xs]. Esto lo logra al pararse en la mitad del intervalo y encontrar en cuál de los intervalos [xi,xm] o [xm,xs] se encuentra la raíz ((f(xs) * f(m) &lt; 0) y (f(xi) * f(m) &lt; 0)). Al detectar una raíz en [xi,xm] o [xm,xs] se reemplaza xs o xi con xm, dependiendo de donde se encuentre la raíz. Luego de obtener el nuevo intervalo [xi,xs] se repite el proceso hasta que llegue a una raíz, se llegue a la tolerancia buscada o falle en encontrar una raíz."
+        android:textAlignment="center" />
 </LinearLayout>

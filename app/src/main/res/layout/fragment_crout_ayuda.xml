@@ -3,4 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText15"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="La matriz U es una matriz triangular superior en la que todos los elementos de su diagonal principal son 1. Es decir, para todo i, 1 &lt;= i &lt;= n, se cumple que Uii = 1." />
 </LinearLayout>

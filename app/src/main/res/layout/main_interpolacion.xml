@@ -46,4 +46,20 @@
         android:onClick="createPolinomionewton"
         android:id="@+id/button21"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spline Cuadratico"
+        android:onClick="createSplinecuadratico"
+        android:id="@+id/button22"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spline Cubico"
+        android:onClick="createSplinecubico"
+        android:id="@+id/button23"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>
